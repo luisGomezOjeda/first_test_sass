@@ -1,0 +1,38 @@
+main{
+ @include flex(row,center,center);
+ @include media-down("md"){
+  @include flex(column,space-between,center);
+
+ };
+ 
+ .section-cards{
+  @include flex(row,space-evenly,center);
+  @include media-down("md"){
+   @include flex(column,space-evenly,center);
+   height: 100%;
+   min-width:319px;
+  }
+ }
+ 
+ .file-card{
+  @include flex(column,space-evenly,start);
+  
+  .handle{
+   width: 60%;
+   max-width:180px;
+   @include flex(row,space-between,start);
+   padding:0 20px;
+  }
+  
+ }
+ .range-card{
+  @include flex(column,space-evenly,center);
+  & .text{
+   margin-right: auto;
+   padding-left: 5%;
+  }
+  & .range-expression{
+   @include flex(row,space-between,center);
+  }
+ }
+}

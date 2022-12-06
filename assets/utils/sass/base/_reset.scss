@@ -1,0 +1,11 @@
+html{
+ font-size:62.5%;
+ font-family: 'Raleway', sans-serif;
+}
+
+body{
+ @include size(100%,100vh,0);
+ border: 0;
+ padding:0;
+ margin: 0;
+}

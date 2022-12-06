@@ -1,0 +1,24 @@
+
+$gradient:(
+ "skin": hsl(6, 100%, 80%),
+  "pink":hsl(335, 100%, 65%)
+  );
+
+
+$palletePrimary:(
+"PaleBlue": hsl(243, 100%, 93%),
+"GrayishBlue": hsl(229, 7%, 55%),
+"DarkBlue": hsl(228, 56%, 26%),
+"VeryDarkBlue": hsl(229, 57%, 11%),
+);
+
+$font : (
+ "small": 1.4rem,
+ "great" : 2rem
+);
+
+$breakPoint : (
+  "sm":540px,
+  "md":768px,
+  "xl":1024px,
+);

@@ -1,0 +1,59 @@
+.handle{
+ button{
+  border: none;
+  @include size(45px,45px,20%);
+  background-color: color($palletePrimary,"VeryDarkBlue");
+ }
+}
+
+.slider-container {
+	position: relative;
+ width: 100%;
+	& .bar {
+		position: absolute;
+		z-index: 1;
+		right: 20px;
+		top: 4px;
+	width: 90%;
+	height: 10px;
+	padding: 0 2px;
+	border-radius: 5px;
+	background-color: lighten(color($palletePrimary,"VeryDarkBlue"),8);
+	overflow: hidden;
+	& .fill{
+		display: block;
+		max-width: 99.5%;
+		width: 0;
+		height: 60%;
+			margin:2px 0;
+			background: linear-gradient(50deg,color($gradient,"skin"),color($gradient,"pink"));
+			border-radius: 5px;
+		}
+	}
+	
+	& .rangeGB {
+		-webkit-appearance: none;
+		position: relative;
+		z-index : 2;
+		width:89%;
+		height: 10px;
+		margin: 0 4%;
+		border-radius: 5px;
+		outline: none;
+		background: transparent;
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			outline: none;
+			width: 5px;
+			height: 5px;
+			margin-top:0.7px;
+			background-color: color($palletePrimary,"PaleBlue");
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;
+			border-bottom-right-radius: 50%;
+			border-bottom-left-radius: 50%;
+		}
+	}
+}
+

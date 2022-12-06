@@ -1,0 +1,76 @@
+.section-cards{
+ @include size(60%,350px,0);
+ min-width: 768px;
+ margin-bottom: 100px;
+
+ .file-card,.range-card{
+  background-color: color($palletePrimary,"DarkBlue");
+  box-shadow: 0 5px 95px 0px color($palletePrimary,"VeryDarkBlue");
+  
+ }
+ .file-card{
+  @include size(300px,200px,2% 45% 2% 2%);
+  .logo{
+   width: 45%;
+   padding:0 20px;
+  }
+  @include media-down("md"){
+   width: 90%;
+   padding:0;
+  }
+ }
+ .range-card{
+  @include size(48%,140px,2%);
+  @include font(1.4rem,400,1.8rem,color($palletePrimary,"PaleBlue"));
+  position:relative;
+  padding-bottom:50px ;
+
+  & .range-input{
+   @include size(80%,50px,2%);
+  }
+  & .range-expression{
+   width: 90%;
+  }
+  @include media-down("md"){
+   @include size(90%,100px,2%);
+  }
+ }
+ .GB-left{
+  position:absolute;
+  @include size(190px,80px,5px 5px 0 5px);
+  background:color($palletePrimary,"PaleBlue");
+  @include font(1.2rem,500,80px,color($palletePrimary,"VeryDarkBlue"));
+  letter-spacing: 2.3px;
+  text-align: center;
+  right: 5%;
+  top: -60px;
+  
+  @include media-down("md"){
+   @include size(50%,50px,5px);
+   @include font(1.2rem,500,50px,color($palletePrimary,"VeryDarkBlue"));
+   right: 25%;
+   top: 120px;
+  }
+  & b{
+   @include font(3rem,700,80px,color($palletePrimary,"VeryDarkBlue"));
+   @include media-down("md"){
+    @include size(150px,50px,5px);
+    @include font(3rem,700,50px,color($palletePrimary,"VeryDarkBlue"));
+   }
+  }
+  & span{
+   @include size(0,0,0);
+   border-left: 30px solid transparent;
+   border-right: 0px solid transparent;
+   border-top: 30px solid color($palletePrimary,"PaleBlue");
+   position:absolute;
+   bottom: -30px;
+   right:0;
+   @include media-down("md"){
+    display: none;
+   }
+  }
+ }
+}
+
+

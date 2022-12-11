@@ -6,12 +6,12 @@ main {
   background-position: bottom;
   background-size: contain;
   background-color: hsl(229deg, 57%, 11%);
-  background-image: url("../../../../assets/images/desktop.png");
+  background-image: url("./desktop.png");
 }
 @media (max-width: 768px) {
   main {
     background-size: cover;
-    background-image: url("../../../../assets/images/mobile.png");
+    background-image: url("./mobile.png");
   }
 }
 

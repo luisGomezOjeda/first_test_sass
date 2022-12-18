@@ -20,6 +20,16 @@
 
 @mixin media-down($width){
   @media (max-width:map-get($map: $breakPoint,$key:$width)){
-    @content
+    @content;
+  }
+}
+
+@mixin animation($class,$n,$d,$t,$ic){
+  .#{$class}{
+    animation : $n $d $t;
+    animation-iteration-count : $ic;
+  }
+  @keyframes #{$n} {
+    @content;
   }
 }

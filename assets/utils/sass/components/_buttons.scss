@@ -42,11 +42,14 @@
 		outline: none;
 		background: transparent;
 		
+		@include media-down("xl"){
+			margin: 0 4%;
+		}
 		@include media-down("md"){
 			margin: 0 5%;
 		}
 		@include media-down("sm"){
-			margin: 0 2%;
+			margin: 0% 2%;
 		}
 
 		&::-webkit-slider-thumb {

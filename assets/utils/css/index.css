@@ -286,6 +286,11 @@ main .range-card .range-expression {
   outline: none;
   background: transparent;
 }
+@media (max-width: 1024px) {
+  .slider-container .rangeGB {
+    margin: 0 4%;
+  }
+}
 @media (max-width: 768px) {
   .slider-container .rangeGB {
     margin: 0 5%;
@@ -293,7 +298,7 @@ main .range-card .range-expression {
 }
 @media (max-width: 540px) {
   .slider-container .rangeGB {
-    margin: 0 2%;
+    margin: 0% 2%;
   }
 }
 .slider-container .rangeGB::-webkit-slider-thumb {
